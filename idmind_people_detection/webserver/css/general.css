@@ -1,0 +1,142 @@
+body{
+    background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body > * {
+    flex: 0 1 100%;
+    border: 2px solid grey;
+    /* border-radius: 1em; */
+    /* padding: 10px; */
+    margin: 0.2em;
+}
+
+#idmind_header{
+    /* width: 100%; */
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding: 5px 10px;
+    border: none;
+}
+
+#idmind_header img{
+    height: 100%;
+    margin: 0 0 5px 10px;
+    /* border: 2px solid green; */
+}
+
+#idmind_header h2{
+    font-size: 1.5em;
+    padding: 0;
+    margin: auto 50px;
+    color: rgb(72, 70, 70);
+}
+
+#idmind_status{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(72, 70, 70);
+    border: none;
+}
+
+#roscore_msgs{
+    flex-grow: 4;
+    padding: 10px 20px 0px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+#roscore_msgs p{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#battery_status{
+    flex-grow: 1;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#navigation{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    border: 0 solid red;
+}
+
+#camera_stream{
+    flex: 1 1 auto;
+    justify-content: center;
+    /* border: 2px solid green; */
+}
+
+#info_panel{
+    flex: 1 1 25%;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+#mission_info{
+    flex: 0 1 10%;
+    justify-content: center;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+#mission_info h3{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#mission_info p{
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+#alarm_panel{
+    display: none;
+    flex: 0 1 auto;
+    justify-content: center;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+#clear_button{
+    flex: 1 1 auto;
+    align-self: center;
+    width: 100px;
+    background-color: rgb(155, 150, 150);
+    padding: 3px 3px;
+    border-radius: 10px;
+}
+
+#idmind_footer{
+    /* width: 100%; */
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(72, 70, 70);
+    border: none;
+}

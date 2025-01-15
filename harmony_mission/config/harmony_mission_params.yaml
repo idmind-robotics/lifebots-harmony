@@ -1,0 +1,8 @@
+mission_controller:
+  ros__parameters:
+    control_freq: 20
+
+/harmony/map_manager:
+  ros__parameters:
+    map_root: "vodafone"
+    map_name: "bc"

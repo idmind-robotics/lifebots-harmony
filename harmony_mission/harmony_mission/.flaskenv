@@ -1,0 +1,2 @@
+FLASK_APP=harmony_mission_webapp.py
+FLASK_ENV=development

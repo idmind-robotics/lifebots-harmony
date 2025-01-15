@@ -1,0 +1,66 @@
+.battery_indicator{
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 20px;
+}
+
+.battery_indicator .battery_label{
+    margin: 5px 0px;
+    padding: 0px;
+    height: 20px;
+    width: 175px;
+    /*border: 2px ridge yellow;*/
+}
+
+.battery_indicator .battery_bar_stop{
+    margin: 5px 0px;
+    padding: 0px;
+    height: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 3px;
+    background-color: black;
+}
+
+.battery_indicator .battery_bar_charge{
+    margin: 5px 0px;
+    padding: 0px;
+    width: 30px;
+    height: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: limegreen;
+}
+
+.battery_indicator .battery_bar_empty{
+    margin: 5px 0px;
+    padding: 0px;
+    width: 30px;
+    height: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: none;
+}
+
+.battery_indicator .battery_bar_start{
+    margin: 5px 0px;
+    padding: 0px;
+    width: 15px;
+    height: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 3px;
+    background-color: black;
+}
+
+.battery_indicator .battery_bar_top{
+    margin: 13px 0px;
+    padding: 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 4px;
+    width: 3px;
+    background-color: black;
+}

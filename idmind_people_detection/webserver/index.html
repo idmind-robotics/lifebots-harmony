@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IDMind Harmony</title>
+    <!-- <link rel="stylesheet" href="css/pico.min.css"> -->
+    <link rel="stylesheet" href="css/general.css">
+    <!-- <link rel="stylesheet" href="css/gamepad.css"> -->
+    <link rel="stylesheet" href="css/battery.css">
+    <script type="text/javascript" src="js/eventemitter2.js"></script>
+    <script type="text/javascript" src="js/roslib.js"></script>
+    <script type="text/javascript" src="js/easeljs.js"></script>
+    <script type="text/javascript" src="js/nav2d.js"></script>
+    <script type="text/javascript" src="js/ros2d.js"></script>
+    <script type="text/javascript" src="js/diagnostics.js"></script>
+    <!-- <script type="text/javascript" src="js/gamepad.js"></script> -->
+    <script type="text/javascript" src="js/battery.js"></script>
+    <link rel="shortcut icon" href="https://www.idmind.pt/wp-content/uploads/2015/05/favicon1.ico">    
+</head>
+<body>
+    <div id="idmind_header">
+        <img src="img/idmind_logo.png" />
+        <h2>Harmony - Control Panel</h2>
+    </div>
+    <div id="idmind_status">
+        <div id="roscore_msgs"></div>
+        <div class="battery_indicator" id="electronic_battery_indicator">
+            <div class="battery_label"></div>
+            <div class="battery_bar_stop"></div>
+            <div class="battery_bar_charge" id="electronic_charge"></div>
+            <div class="battery_bar_empty" id="electronic_empty"></div>
+            <div class="battery_bar_start"></div>
+            <div class="battery_bar_top"></div>
+        </div>
+        <!-- <div id="battery_status">battery</div> -->
+    </div>
+    <div id="navigation">
+        <!-- <div id="camera_stream"><img src="http://localhost:8080/stream?topic=/rgb/image_raw" width="80%" alt="Waiting for Camera Stream"></div> -->
+        <div id="camera_stream"></div>
+        <div id="info_panel">
+            <!-- <h2>Information Panel</h2> -->
+            <div id="mission_info">
+                <h3>Mission Info</h3>
+                <p><b>Mission</b>: Idle<br>
+                <b>Status</b>: Robot is Idle</p>
+            </div>
+            <div id="alarm_panel"></div>
+        </div>
+    </div>
+    <div id="idmind_footer"></div>
+</body>
+<script>
+    connect_to_ros();
+    document.getElementById("camera_stream").innerHTML = "<img src='http://"+window.location.host.split(":")[0]+":8080/stream?topic=/harmony/people_detection_node/people_pose' height='600px' alt='Waiting for Camera Stream'>"
+</script>
+
+</html>
